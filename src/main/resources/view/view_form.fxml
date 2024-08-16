@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="487.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewFormController">
+   <children>
+      <TableView fx:id="tblCustomer" layoutX="41.0" layoutY="254.0" prefHeight="168.0" prefWidth="576.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="120.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="111.19999694824219" text="Address" />
+            <TableColumn fx:id="colPhoneNumber" prefWidth="128.0" text="Phone Number" />
+            <TableColumn fx:id="colDob" prefWidth="141.5999755859375" text="Date of birth" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="75.0" layoutX="9.0" layoutY="14.0" stroke="#8c3b3b" strokeType="INSIDE" strokeWidth="0.0" width="637.0" />
+      <Text layoutX="252.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Form" wrappingWidth="161.336669921875">
+         <font>
+            <Font name="Tahoma Bold" size="30.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="282.0" layoutY="434.0" onAction="#btnReloadOnAction" prefHeight="38.0" prefWidth="90.0" ripplerFill="#ef2323" style="-fx-background-color: #1e90ff;" text="Reload">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtId" layoutX="42.0" layoutY="103.0" prefHeight="26.0" prefWidth="153.0" promptText="ID" />
+      <JFXTextField fx:id="txtName" layoutX="373.0" layoutY="103.0" prefHeight="26.0" prefWidth="154.0" promptText="Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="42.0" layoutY="151.0" prefHeight="26.0" prefWidth="154.0" promptText="Address" />
+      <JFXTextField fx:id="txtPhoneNumber" layoutX="215.0" layoutY="151.0" prefHeight="26.0" prefWidth="136.0" promptText="Salary" text="Phone Number" />
+      <JFXComboBox fx:id="cmbTitle" layoutX="215.0" layoutY="103.0" prefHeight="26.0" prefWidth="136.0" promptText="Title" />
+      <DatePicker fx:id="dateDOB" layoutX="373.0" layoutY="151.0" prefHeight="26.0" prefWidth="154.0" promptText="Date of Birth" showWeekNumbers="true" />
+      <JFXButton layoutX="540.0" layoutY="104.0" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #1e90ff;" text="Update" />
+      <JFXButton layoutX="540.0" layoutY="151.0" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #1e90ff;" text="Delete" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="353.0" layoutY="206.0" stroke="BLACK" strokeType="INSIDE" width="274.0" />
+      <JFXButton layoutX="539.0" layoutY="212.0" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #1e90ff;" text="Search" />
+      <TextField fx:id="txtSearch" layoutX="364.0" layoutY="212.0" promptText="Search by ID" />
+   </children>
+</AnchorPane>

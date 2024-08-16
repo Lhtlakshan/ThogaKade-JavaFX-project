@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="509.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+   <children>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="75.0" layoutX="13.0" layoutY="14.0" stroke="#8c3b3b" strokeType="INSIDE" strokeWidth="0.0" width="576.0" />
+      <Text layoutX="150.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Customer Form" wrappingWidth="298.93670654296875">
+         <font>
+            <Font name="Tahoma Bold" size="30.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtId" layoutX="248.0" layoutY="118.0" prefHeight="16.0" prefWidth="232.0" promptText="Enter customer's ID here...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="249.0" layoutY="211.0" prefHeight="21.0" prefWidth="232.0" promptText="Enter customer's name here...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="249.0" layoutY="259.0" prefHeight="18.0" prefWidth="232.0" promptText="Enter customer's Address here...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPhoneNumber" layoutX="249.0" layoutY="309.0" prefHeight="37.0" prefWidth="232.0" promptText="Enter customer's telNo. here...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="98.0" layoutY="417.0" onAction="#btnAddOnAction" prefHeight="36.0" prefWidth="382.0" style="-fx-background-color: #3399FF;" text="Add">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbTitle" layoutX="249.0" layoutY="174.0" prefHeight="26.0" prefWidth="71.0" promptText="Title" />
+      <DatePicker fx:id="dateDOB" layoutX="249.0" layoutY="365.0" prefHeight="26.0" prefWidth="232.0" promptText="Add customer's birthday here..." showWeekNumbers="true" />
+      <Label layoutX="97.0" layoutY="123.0" prefHeight="26.0" prefWidth="106.0" text="ID">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="214.0" prefHeight="26.0" prefWidth="106.0" text="Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="262.0" prefHeight="26.0" prefWidth="106.0" text="Address">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="312.0" prefHeight="30.0" prefWidth="147.0" text="Phone Number">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="363.0" prefHeight="26.0" prefWidth="106.0" text="Birthday">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

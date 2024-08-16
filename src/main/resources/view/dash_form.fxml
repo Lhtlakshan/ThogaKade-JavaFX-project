@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashFormController">
+   <children>
+      <JFXButton layoutX="215.0" layoutY="114.0" onAction="#btnAddCustomerOnAction" prefHeight="44.0" prefWidth="169.0" style="-fx-background-color: #b6badc;" text="Add Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="215.0" layoutY="177.0" onAction="#btnViewCustomerOnAction" prefHeight="44.0" prefWidth="169.0" style="-fx-background-color: #b6badc;" text="View Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="204.0" layoutY="239.0" onAction="#btnUpdateCustomerOnAction" prefHeight="44.0" prefWidth="191.0" style="-fx-background-color: #b6badc;" text="Update Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="215.0" layoutY="304.0" onAction="#btnDeleteCustomerOnAction" prefHeight="44.0" prefWidth="169.0" style="-fx-background-color: #b6badc;" text="Delete Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="75.0" layoutX="12.0" layoutY="14.0" stroke="#8c3b3b" strokeType="INSIDE" strokeWidth="0.0" width="576.0" />
+      <Text layoutX="135.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thoga Kade Dashboard" wrappingWidth="401.33673095703125">
+         <font>
+            <Font name="Tahoma Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
